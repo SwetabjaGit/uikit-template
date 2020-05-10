@@ -33,12 +33,15 @@ const Content = () => {
             subject=" less than last week."
           />
           <div className="uk-visible@l">
-						<span className="uk-text-small"><span data-uk-icon="icon:users" className="uk-margin-small-right uk-text-primary"></span>Lorem ipsum</span>
-						<h1 className="uk-heading-primary uk-margin-remove uk-text-primary">5.284</h1>
-						<div className="uk-text-small">
-							<span className="uk-text-success" data-uk-icon="icon: triangle-up"> 7%</span> more than last week.
-						</div>
-					</div>
+            <span className="uk-text-small">
+              <span data-uk-icon="icon:users" className="uk-margin-small-right uk-text-primary"></span>
+              Lorem ipsum
+            </span>
+            <h1 className="uk-heading-primary uk-margin-remove uk-text-primary">5.284</h1>
+            <div className="uk-text-small">
+              <span className="uk-text-success" data-uk-icon="icon: triangle-up"> 7%</span> more than last week.
+            </div>
+          </div>
         </div>
         <hr/>
         <div className="uk-grid uk-grid-medium" data-uk-grid>

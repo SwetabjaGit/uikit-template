@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import StatsCard from './StatsCard';
 import DataCard from './DataCard';
+import renderCharts from '../utils/chartScripts';
 
 const Content = () => {
+
+  useEffect(() => {
+    renderCharts();
+  }, []);
 
   return (
     <div id="content" data-uk-height-viewport="expand: true">

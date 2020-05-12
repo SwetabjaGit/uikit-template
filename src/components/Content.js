@@ -76,6 +76,11 @@ const Content = () => {
             chart="chart5"
           />
         </div>
+
+        <footer className="uk-section uk-section-small uk-text-center">
+          <hr />
+          <p className="uk-text-small uk-text-center">Copyright 2019 - <a href="https://github.com/zzseba78/Kick-Off">Created by KickOff</a> | Built with <a href="http://getuikit.com" title="Visit UIkit 3 site" target="_blank" data-uk-tooltip><span data-uk-icon="uikit" /></a> </p>
+        </footer>
       </div>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from "react";
 import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import './App.css';
+import './app.scss';
 
 // Components
 import Dashboard from './views/Dashboard';
-import Article from './views/Article';
+import Article from './views/Article/index';
 import Album from './views/Album';
 import Cover from './views/Cover';
 import Cards from './views/Cards';

@@ -1,0 +1,229 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.uk-tooltip {
+  background-color: white;
+  color: #242c33;
+  box-shadow: 0 2px 12px rgba(50, 50, 50, 0.1);
+}
+
+#top-head {
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  .uk-navbar-nav li a,
+  .uk-navbar-item,
+  .uk-navbar-toggle {
+     min-height: 52px;
+     padding: 0 8px;
+     font-size: 0.85rem;
+  }
+
+  .search-field {
+    -webkit-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    &:focus {
+      width: 250px;
+      border-color: #fff !important;
+    }
+  }
+
+  .navbar-logo {
+    background-color: #222a30;
+    margin-left: -12px;
+  }
+
+  [class*="uk-navbar-dropdown-bottom"] {
+    margin-top: 0;
+  }
+}
+
+
+#left-col {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #222a30;
+  width: 250px;
+  z-index: 11;
+  transition: height 0.3s ease-out;
+
+  .uk-nav-default {
+    
+    .uk-nav-header {
+      padding: 20px 20px 8px 20px;
+    }
+    .uk-nav-sub {
+      padding-left: 34px;
+    }
+    li {
+      .uk-open a {
+        border-left: 2px solid #39f;
+        padding-left: 30px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+      a {
+        padding: 8px 20px;
+        border-left: 2px solid transparent;
+        transition: all 0.15s ease-out;
+
+        &:hover {
+          border-left: 2px solid #39f;
+          padding-left: 30px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .uk-dropdown {
+    &.user-drop {
+      min-width: 160px;
+      max-width: 160px;
+      padding: 0.75rem;
+
+      &:after {
+        bottom: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #fff;
+        border-width: 6px;
+        margin-left: -6px;
+      }
+    }
+  }
+
+  .left-logo {
+    height: 52px;
+    line-height: 52px;
+    padding: 0 20px;
+    .custom-logo {
+      height: 35px;
+    }
+  }
+
+  .left-content-box {
+    padding: 0.75rem 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: -1px;
+    margin-top: 10px;
+
+    .text-light {
+      font-size: 1.25rem;
+      font-weight: 200;
+    }
+    .profile-img {
+      width: 80px;
+      height: 80px;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+
+  .left-nav-wrap {
+    padding-bottom: 240px;
+    
+    .left-content-box {
+      .uk-progress {
+        height: 4px;
+        margin-top: 0.7rem;
+        margin-bottom: 0.7rem;
+        background-color: rgba(0, 0, 0, 0.23);
+
+        &.warning {
+          &::-webkit-progress-value {
+            background-color: #faa05a;
+          }
+          &::-moz-progress-bar {
+            background-color: #faa05a;
+          }
+          &::-ms-fill {
+            background-color: #faa05a;
+          }
+        }
+
+        &.success {
+          &::-webkit-progress-value {
+            background-color: #32d296;
+          }
+          &::-moz-progress-bar {
+            background-color: #32d296;
+          }
+          &::-ms-fill {
+            background-color: #32d296;
+          }
+        }
+
+      }
+    }
+  }
+
+  .content-box-dark {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+
+  .bar-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 25px 0;
+    background-color: #222a30;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    bottom: 0;
+    width: 248px;
+  }
+}
+
+
+#content {
+  margin-top: 52px;
+  background-color: #f7f7f7;
+  padding: 30px 0 30px 0;
+  margin-left: 0;
+  transition: margin 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  .uk-heading-primary {
+    letter-spacing: -0.032em;
+    font-weight: 300;
+  }
+
+  .uk-card {   /* Smooth shadow transition */
+    -webkit-transition: box-shadow 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 0.55s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .panel-icons {
+    margin: 0 4;
+  }
+
+  .chart-container {
+    position: relative;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #content {
+    margin-left: 251px;
+  }
+  #top-head {
+    left: 240px;
+  }
+}

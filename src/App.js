@@ -9,7 +9,7 @@ import Article from './views/Article/index';
 import Album from './views/Album';
 import Cover from './views/Cover';
 import Cards from './views/Cards';
-import NewsBlog from './views/NewsBlog';
+import NewsBlog from './views/NewsBlog/index';
 import Price from './views/Price/index';
 import Login from './views/Login';
 import LoginDark from './views/LoginDark';
